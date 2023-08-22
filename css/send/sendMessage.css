@@ -1,0 +1,62 @@
+.send-email{
+    padding: 40px 0px;
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 1rem;
+
+}
+
+.send-box {
+    width: 100%;
+    padding: 1rem;
+    color: var(--color-white);
+}
+.send-box p{
+    margin-bottom: var(--margin-bottom);
+}
+.box-email{
+    width: 100%;
+    margin: auto;
+    background-color: var(--color-white);
+    display: flex;
+    padding: .40rem;
+    border-radius: 50px;
+}
+
+.box-email input{
+    width: 100%;
+    padding: 1rem;
+}
+
+.send-email button{
+    color: var(--color-primary);
+    font-size: 1.15rem;
+    padding: 1rem;
+}
+
+
+
+ img {
+    width: 80%;
+}
+
+@media (min-width:920px) {
+    .send-email {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 100px;
+    }
+
+    .box-email {
+        width: 90%;
+    }
+    img {
+        width: 30%;
+    }
+
+    
+}

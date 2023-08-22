@@ -1,0 +1,91 @@
+.testimonial{
+    padding: 120px 0px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.testimonial h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.testimonial img{
+    width: 80px;
+    border-radius: 50%;
+}
+
+.slider-container{
+    height: 100vh;
+    display: inline-flex;
+    overflow: hidden;
+    cursor: grab;
+    transform: translateX(0);
+    transition: transform .4s ease-in-out;
+    
+}
+.grabbing{
+    cursor: grabbing;
+}
+
+.slider-container .slide{
+    width: 100vw;
+    max-height: 100vh;
+    user-select: none;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.145rem;
+    line-height: 1.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+
+.slider-container .slide span{
+    color: var(--color-secundary);
+    display: block;
+}
+
+.slider-container .slide::before{
+    content: "❝";
+    display: block;
+    color: var(--color-primary);
+    font-size: 10rem;
+    position: absolute;
+    left: 0px;
+    top: 40px;
+}
+
+.controls{
+    display: flex;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:70%;
+    gap: 40px;
+   
+}
+
+.controls .btn-slider{
+    display: none;
+    color: var(--color-primary);
+    font-size: 2rem;
+}
+
+@media (min-width:920px){
+    .slider-container .slide{
+        font-size: 1.44rem;
+    }
+    .slider-container .slide::before{
+        top: -20px;
+    }
+
+    .controls .btn-slider{
+        display: inline-block;
+    }
+}

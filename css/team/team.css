@@ -1,0 +1,38 @@
+.team{
+    padding: 120px 0px;
+    text-align: center;
+}
+
+.gruop-team{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-team{
+    max-width: 400px;
+    width: 100%;
+    padding: 2rem;
+    gap: 30px;
+}
+
+.group-icon{
+    width: 100%;
+}
+
+.group-icon i{
+    color: var(--color-primary);
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.card-team img{
+    width: 100%;
+    margin-bottom: var(--margin-bottom);
+}
+
+
+@media (min-width:920px){
+    .gruop-team{
+        flex-direction: row;
+    }
+}

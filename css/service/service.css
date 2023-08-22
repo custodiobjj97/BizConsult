@@ -1,0 +1,51 @@
+.services{
+    padding: 120px 0px;
+    text-align: center;
+}
+
+.services h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.gruop-services{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 22px;
+}
+
+.box-service{
+    padding: 2.77rem;
+    box-shadow: 0px 0px 0px .1px var(--color-dark);
+    position: relative;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.box-service:hover{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.box-service .icon{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: var(--color-primary);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: var(--margin-bottom);
+}
+.box-service h3{
+    font-size: 1.77rem;
+    margin-bottom: var(--margin-bottom);
+}
+
+@media (min-width:920px){
+    .gruop-services{
+        grid-template-columns: repeat(3,1fr);
+        gap: 70px;
+    }
+}

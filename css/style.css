@@ -1,0 +1,32 @@
+/*global*/
+@import "global/global.css";
+@import "global/header.css";
+
+/*home*/
+@import "home/home.css";
+
+/*about*/
+@import "about/about.css";
+
+/*service*/
+@import "service/service.css";
+
+/*feature*/
+@import "feature/feature.css";
+
+@import "testimonial/testimonial.css";
+/*send message*/
+@import "send/sendMessage.css";
+
+/*team*/
+@import "team/team.css";
+
+/*team*/
+@import "contact/contact.css";
+
+/*animation*/
+@import "animation/animation.css";
+
+/*footer*/
+@import "footer/footer.css";
+
