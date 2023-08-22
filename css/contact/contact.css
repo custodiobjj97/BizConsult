@@ -30,6 +30,7 @@
 }
 .input-box{
     display: flex;
+    flex-direction: column;
     gap: 30px;
 }
 .form textarea{
@@ -45,4 +46,10 @@
     color: var(--color-white);
     padding: 1rem;
     border-radius: 5px;
+}
+
+@media (min-width:920px) {
+    .input-box{
+        flex-direction: row;
+    }
 }
